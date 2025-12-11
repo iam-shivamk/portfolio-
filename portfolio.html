@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shivam Kirade — Portfolio</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--text:#e6eef6}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;background:linear-gradient(180deg,var(--bg),#071023);color:var(--text);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+    .card{width:100%;max-width:900px;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:32px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6);display:grid;grid-template-columns:180px 1fr;gap:24px}
+    .avatar{width:180px;height:180px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--card),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03);overflow:hidden}
+    .avatar h1{margin:0;font-size:28px;letter-spacing:0.6px;color:var(--accent)}
+    .content h2{margin:0;font-size:20px}
+    .name{font-size:28px;margin:0 0 6px}
+    .subtitle{color:var(--muted);margin-bottom:18px}
+    p{line-height:1.55;color:rgba(230,238,246,.9)}
+    .meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+    .meta .chip{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.02);color:var(--muted);font-size:14px}
+    .actions{margin-top:20px;display:flex;gap:12px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#022;box-shadow:0 6px 18px rgba(6,182,212,0.14)}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+    footer{grid-column:1 / -1;margin-top:22px;color:var(--muted);font-size:13px}
+    @media (max-width:720px){.card{grid-template-columns:1fr;max-width:520px}.avatar{width:120px;height:120px;margin:0 auto}.content{text-align:center}.meta{justify-content:center}.actions{justify-content:center}}
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="avatar" aria-hidden>
+      <h1>SK</h1>
+    </div>
+    <div class="content">
+      <p class="subtitle">Hello — I am</p>
+      <h2 class="name">Shivam Kirade</h2>
+      <p class="subtitle">IT M.Tech student • International Institute of Professional Studies (IIPS), DAVV • Batch 2023–2028</p>
+
+      <p>
+        I am a postgraduate student in Information Technology (M.Tech) at IIPS, DAVV. I like building small projects, learning about modern web and cloud technologies, and solving problems with clean code. This simple portfolio showcases my introduction and contact information.
+      </p>
+
+      <div class="meta" aria-hidden>
+        <span class="chip">Course: M.Tech (IT)</span>
+        <span class="chip">Institute: IIPS, DAVV</span>
+        <span class="chip">Batch: 2023–2028</span>
+      </div>
+
+      <div class="meta" style="margin-top:24px; display:flex; flex-direction:column; gap:10px;">
+  <a class="chip" href="https://www.youtube.com/playlist?list=PLXkIzQfmXrLjouNNRYJU-9je-W6QHtWmc" target="_blank">DS Paper Solution Playlist 1</a>
+  <a class="chip" href="https://www.youtube.com/playlist?list=PLXkIzQfmXrLgNQl5QDJv84EJS-u191qJ6" target="_blank">DS Paper Solution Playlist 2</a>
+  <a class="chip" href="https://www.youtube.com/playlist?list=PLXkIzQfmXrLjt68IXit5uWTWyqEZNjWHu" target="_blank">DS Paper Solution Playlist 3</a>
+  <a class="chip" href="https://www.youtube.com/playlist?list=PLXkIzQfmXrLgDI7iuvMMffRQCpr55PDCZ" target="_blank">DS Paper Solution Playlist 4</a>
+</div>
+
+    </div>
+  </main>
+
+  <script>
+    function copyEmail(){
+      const email = 'shivam.kirade@example.com';
+      navigator.clipboard?.writeText(email).then(()=>{
+        alert('Email copied: ' + email);
+      }).catch(()=>{
+        prompt('Copy this email', email);
+      });
+    }
+  </script>
+</body>
+</html>
